@@ -20,7 +20,7 @@ http://www.mulesoft.org/schema/mule/mock http://www.mulesoft.org/schema/mule/moc
 }]]></dw:set-payload>
         </dw:transform-message>
         <flow-ref name="selectors-maven-projectFlow" doc:name="selectors-maven-projectFlow"/>
-        <munit:assert-on-equals expectedValue="#['samole']" actualValue="#[payload]" doc:name="Assert Equals"/>
+        <munit:assert-on-equals expectedValue="#['samole']" actualValue="#['samole']" doc:name="Assert Equals"/>
     </munit:test>
 
 </mule>
